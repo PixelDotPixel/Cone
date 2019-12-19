@@ -19,6 +19,10 @@ a:hover {
     text-decoration: none;
 }
 
+body {
+    background-color: black;
+}
+
 .Banner {
     display: block;
     margin-left: auto;
@@ -26,16 +30,54 @@ a:hover {
     width: 55%;
 }
 
-.Linkblock{
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(Images/linksbg.png); 
-    background-attachment: fixed;
-    background-clip:padding-box
-    width: 25%;
-    text-align: center;
-
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;   
 }
 
+.Home-shadow{
+    display: block;
+    background-color: aqua;    
+}
+
+.Inline-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: inherit;
+    height: 240px;
+    align-content: center;
+    background-image: url(Images/linksbg.png);
+    padding-bottom: 60px;
+}
+
+.Linkblock{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    background-size: cover;
+    text-align: center;
+}
+
+.slide{
+    width: 200px;
+    height: 200px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    
+    align-content: center top;
+    
+    background-image: url(Images/PolaroidPC2.png);
+    background-repeat: no-repeat;
+    background-size: 264px;
+    background-origin: content-box;
+    background-position: 50% 30%;
+
+}
 
 
