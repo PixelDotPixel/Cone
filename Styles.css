@@ -1,32 +1,38 @@
 a {
-    font-family: "Bevan";
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 43px;
-    color: #64553f;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    text-transform: uppercase;
-    text-decoration: none;
+
 }
 
 a:hover {
-    font-family: "Bevan";
-    font-size: 22px;
-    font-weight: 400;
     color: orange;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    text-transform: uppercase;
-    text-decoration: none;
 }
 
 a:active {
     text-decoration: underline;
 }
 
+figure {
+    display: table;
+    width: 1px;
+}
+
+img, figcaption{
+    display: table-row;
+    vertical-align: bottom;
+}
+
+figcaption{
+}
+
+/*Start Custom Class Styles*/
+
 body {
     background-image: url(Images/Wood-2.1G.png);
-    background-size:100% 180%;
+    background-size:100% 1000px;
     background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-position: top;
+    background-attachment: fixed;
     background-color: black;
 }
 
@@ -47,12 +53,28 @@ body {
     text-align: center;
 }
 
+.Contact-Map {
+    display: block;
+}
+
+.Contact-Details {
+    display: block;
+    width: 430px;
+    padding-left: 10px;
+    text-align: left;
+}
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;   
 }
+
+.Font-Small {
+    
+}
+
 
 .Home-shadow {
     display: block;
@@ -70,10 +92,49 @@ body {
     padding-bottom: 60px;
 }
 
+.Inline-box-Contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    height: 240px;
+    align-content: center;
+    background-image: url(Images/linksbg.png);
+    padding-bottom: 70px;
+}
+
+.Inline-Frill {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    align-content: center;
+    background-image: url(Images/linksbg.png);
+}
+
+.Inline-box-Menu-Title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    align-content: center;
+    background-image: url(Images/linksbg.png);
+}
+
+.Inline-box-Menu-Subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    align-content: center;
+    background-image: url(Images/linksbg.png);
+    padding-bottom: 20px;
+}
+
 .Linkblock {
     display: flex;
     padding-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: px;
     justify-content: space-around;
     background-size: cover;
     text-align: center;
@@ -87,6 +148,14 @@ body {
     text-align: center;
 }
 
+.Menu-Item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    height: 500px;
+}
+
 .OFF {
     display: none;
 }
@@ -96,6 +165,44 @@ body {
 }
 
 .Font {
+    font-family: "Bevan";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 43px;
+    text-wrap: wrap !important; 
+    white-space: nowrap;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.Font-Medium {
+    font-family: "Bevan";
+    font-size: 16px;
+    font-weight: 400;
+    text-wrap: wrap !important; 
+    text-decoration: none;
+}
+
+.Font-Small {
+    font-family: "Bevan";
+    font-size: 12px;
+    font-weight: 400;
+    text-wrap: wrap !important; 
+    text-decoration: none;
+}
+
+.Font-Link {
+    font-family: "Bevan";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 43px;
+    color: #64553f;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.Font-Link:hover {
     font-family: "Bevan";
     font-size: 22px;
     font-weight: 400;
@@ -158,8 +265,7 @@ body {
     font-weight: 400;
     line-height: 43px;
     color: rgba(60,89,152,1) !important;
-    background-color: black;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.6);
     text-transform: none;
     text-decoration: none;
 }
@@ -168,23 +274,15 @@ body {
     text-transform: none !important;
 }
 
-/*.slide{
-    width: 200px;
-    height: 200px;
+.slide {
+    width: 230px;
+    height: 210px;
+    background-color: black;
     padding-left: 70px;
     padding-right: 70px;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    
+    border-radius: 7%; 
     align-content: center top;
-    
-    background-image: url(Images/PolaroidPC2.png);
-    background-repeat: no-repeat;
-    background-size: 264px;
-    background-origin: content-box;
-    background-position: 50% 30%;
-
-} */
+}
 
 
 
