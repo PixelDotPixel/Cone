@@ -21,14 +21,11 @@ img, figcaption{
     vertical-align: bottom;
 }
 
-figcaption{
-}
-
 /*Start Custom Class Styles*/
 
 body {
     background-image: url(Images/Wood-2.1G.png);
-    background-size:100% 1000px;
+    background-size:100% 1300px;
     background-repeat: no-repeat;
     background-origin: padding-box;
     background-position: top;
@@ -62,13 +59,12 @@ body {
     width: 430px;
     padding-left: 10px;
     text-align: left;
+    color: white;
 }
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;   
+.font {
+    color:bisque;
+    font-size: 18px;
 }
 
 .Font-Small {
@@ -78,29 +74,89 @@ body {
 
 .Home-shadow {
     display: block;
-    background-color: aqua;    
+   
 }
 
 .Inline-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: inherit;
+    width: 852px;
     height: 240px;
     align-content: center;
-    background-image: url(Images/linksbg.png);
+    
+    background-color: rgba(5, 5, 5, 0.5);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-width: 5px;
     padding-bottom: 60px;
 }
 
-.Inline-box-Contact {
+.Inline-box-Main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 852px;
     height: 240px;
     align-content: center;
-    background-image: url(Images/linksbg.png);
+    background-color: rgba(5, 5, 5, 0.5);
+    /*background-image: url(Images/linksbg.png);*/
     padding-bottom: 70px;
+    
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 5px;
+}
+
+.Title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    align-content: center;
+    background-color: rgba(5, 5, 5, 0.5);
+    
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 5px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-width: 5px;
+}
+
+.Bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    height: 20px;
+    align-content: center;
+    background-color: rgba(5, 5, 5, 0.5);
+    
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 5px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-width: 5px;
+}
+.Inline-Frill-Menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    align-content: center;
+    background-color: rgba(5, 5, 5, 0.5);
+    /*background-image: url(Images/linksbg.png);*/
+    
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 5px;    
 }
 
 .Inline-Frill {
@@ -112,25 +168,6 @@ body {
     background-image: url(Images/linksbg.png);
 }
 
-.Inline-box-Menu-Title {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 852px;
-    align-content: center;
-    background-image: url(Images/linksbg.png);
-}
-
-.Inline-box-Menu-Subtitle {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 852px;
-    align-content: center;
-    background-image: url(Images/linksbg.png);
-    padding-bottom: 20px;
-}
-
 .Linkblock {
     display: flex;
     padding-top: 20px;
@@ -140,12 +177,31 @@ body {
     text-align: center;
 }
 
-.Linkblock-Subbanner {
+.Subtitle {
     display: flex;
-    padding-bottom: 0px;
-    justify-content: space-around;
-    background-size: cover;
-    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 852px;
+    align-content: center;
+    /*background-image: url(Images/linksbg.png);*/
+    background-color: rgba(5, 5, 5, 0.5);
+    padding-bottom: 20px;
+    
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 5px;
+}
+
+.NoGap{
+    padding-top: 0px !important;
+}
+
+.Menu-F {
+    color: bisque;
+}
+
+.Menu-T {
+    color: lightgoldenrodyellow;
 }
 
 .Menu-Item {
@@ -196,7 +252,7 @@ body {
     font-size: 22px;
     font-weight: 400;
     line-height: 43px;
-    color: #64553f;
+    color:bisque;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     text-transform: uppercase;
     text-decoration: none;
@@ -216,7 +272,6 @@ body {
 .slideContainer {
     display: flex;
     padding-bottom: 10px;
-    background-image: url(Images/linksbg.png);
 }
 
 .slideL {
@@ -253,10 +308,12 @@ body {
     display:flex;
     text-wrap: wrap !important;
     color: #ffea95;
-    padding-left: 172px;
-    padding-right: 172px;
+    padding-left: 177px;
+    padding-right: 177px;
     background-image: url(Images/Subbanner.png);
     background-attachment: fixed;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .Facebook {
